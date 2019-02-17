@@ -1,10 +1,10 @@
 def sockMerchant(n, ar):
-    count = 0
+    count=0
     ar.sort()
     i = 0
-    for i in range(0,n):
+    while i<n:
         if ar[i]==ar[i+1]:
-            count = count+1
+            count+=1
             i+=2
         else:
             i+=1
@@ -14,5 +14,6 @@ def main():
     n=int(input('enter the number of socks'))
     ar=list(input('enter the pairs'))
     sockMerchant(n,ar)
+    
     
 main()
